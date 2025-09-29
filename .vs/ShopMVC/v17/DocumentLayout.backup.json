@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\lookupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\lookupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:59:18.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\StatisticsController.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:59:04.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LookupController.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\LookupController.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\LookupController.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\LookupController.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Controllers\\LookupController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:57:55.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\ItemsController.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\ItemsController.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\ItemsController.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Controllers\\ItemsController.cs",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAUwFEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:57:07.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:57:05.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:56:56.061Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

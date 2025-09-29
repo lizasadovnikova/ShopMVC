@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Статистика";
+}
+<h2>Статистика</h2>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+    <div>
+        <h4>Товари за категоріями</h4>
+        <canvas id="chartByCategory" height="160"></canvas>
+    </div>
+    <div>
+        <h4>Товари за країнами</h4>
+        <canvas id="chartByCountry" height="160"></canvas>
+    </div>
+    <div>
+        <h4>Середня ціна по категоріях</h4>
+        <canvas id="chartAvgPrice" height="160"></canvas>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- Chart.js (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        (async () => {
+          const r = await fetch('@Url.Action("Data", "Statistics")');
+          const data = await r.json();
+
+          const makeBar = (ctxId, labels, values) => {
+            new Chart(document.getElementById(ctxId), {
+              type: 'bar',
+              data: {
+                labels,
+                datasets: [{ label: 'К-сть', data: values }]
+              },
+              options: { responsive: true, plugins: { legend: { display:false } } }
+            });
+          };
+
+          const makePie = (ctxId, labels, values) => {
+            new Chart(document.getElementById(ctxId), {
+              type: 'doughnut',
+              data: {
+                labels,
+                datasets: [{ data: values }]
+              },
+              options: { responsive: true }
+            });
+          };
+
+          makeBar(
+            'chartByCategory',
+            data.itemsByCategory.map(x => x.label),
+            data.itemsByCategory.map(x => x.count)
+          );
+
+          makePie(
+            'chartByCountry',
+            data.itemsByCountry.map(x => x.label),
+            data.itemsByCountry.map(x => x.count)
+          );
+
+          new Chart(document.getElementById('chartAvgPrice'), {
+            type: 'line',
+            data: {
+              labels: data.avgPriceByCategory.map(x => x.label),
+              datasets: [{ label: 'Середня ціна', data: data.avgPriceByCategory.map(x => x.avg), tension: 0.3 }]
+            },
+            options: { responsive: true }
+          });
+        })();
+    </script>
+}

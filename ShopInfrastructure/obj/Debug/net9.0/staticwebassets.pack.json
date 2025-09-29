@@ -1,0 +1,337 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ShopInfrastructure.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ShopInfrastructure.pfz6f6bz47.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\108e8837-2e89-4e09-abef-9a7b994468f7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\108e8837-2e89-4e09-abef-9a7b994468f7.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\37aaaf2d-3a31-4b34-9895-a2a56727172e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\37aaaf2d-3a31-4b34-9895-a2a56727172e.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\564ba769-75fa-4536-be7a-c21e7cdfed0b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\564ba769-75fa-4536-be7a-c21e7cdfed0b.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\80304c8d-dc82-4b6b-9d12-92c3eb455a80.jpg",
+      "PackagePath": "staticwebassets\\uploads\\80304c8d-dc82-4b6b-9d12-92c3eb455a80.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\947196f5-4988-4a5a-94ac-6f02fd77ea8e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\947196f5-4988-4a5a-94ac-6f02fd77ea8e.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\9aa1706b-574f-4348-88e1-75676f671944.png",
+      "PackagePath": "staticwebassets\\uploads\\9aa1706b-574f-4348-88e1-75676f671944.png"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\b0b6cedb-7770-4ef8-bfb9-81f9cebb5067.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b0b6cedb-7770-4ef8-bfb9-81f9cebb5067.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\b251b760-a1bd-458d-9202-92eb5ee7f187.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b251b760-a1bd-458d-9202-92eb5ee7f187.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\c30b4951-e59a-4edb-beb2-aec40a484d97.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c30b4951-e59a-4edb-beb2-aec40a484d97.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\c792027a-714e-4be2-95c9-a9d9dc1acee2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c792027a-714e-4be2-95c9-a9d9dc1acee2.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\ce8847b7-1bf1-479d-9211-b3821622b914.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ce8847b7-1bf1-479d-9211-b3821622b914.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\d289cb16-f6c9-421f-b8d2-07534833671b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d289cb16-f6c9-421f-b8d2-07534833671b.jpg"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\d6663cd8-c078-43ae-92ff-0129305cf931.png",
+      "PackagePath": "staticwebassets\\uploads\\d6663cd8-c078-43ae-92ff-0129305cf931.png"
+    },
+    {
+      "Id": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\wwwroot\\uploads\\f2e6896e-489a-473f-9a1a-66a56a212739.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f2e6896e-489a-473f-9a1a-66a56a212739.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ShopInfrastructure.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ShopInfrastructure.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.ShopInfrastructure.props",
+      "PackagePath": "build\\ShopInfrastructure.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopInfrastructure.props",
+      "PackagePath": "buildMultiTargeting\\ShopInfrastructure.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.ShopInfrastructure.props",
+      "PackagePath": "buildTransitive\\ShopInfrastructure.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

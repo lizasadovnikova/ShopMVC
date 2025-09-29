@@ -1,0 +1,96 @@
+﻿@model IEnumerable<ShopDomain.Model.OriginCountry>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Країни походження</h1>
+
+<p>
+    <a asp-action="Create">Додати нову країну</a>
+</p>
+<div style="height: 2px; background-color: #022c14; margin-top: 10px;"></div>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Редагувати</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Подробиці</a> |
+                    <a href="#" class="delete-link" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="@item.Id">
+                        Видалити
+                    </a>
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-6">
+        <div id="countByCountryChart"></div>
+    </div>
+</div>
+
+@section Scripts
+{
+    
+}
+
+
+<!-- Модальне вікно для підтвердження видалення -->
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmDeleteLabel">Підтвердження видалення</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Ви впевнені, що хочете видалити цю країну?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
+                <form id="deleteForm" method="post">
+                    <button type="submit" class="btn btn-danger">Видалити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var deleteModal = document.getElementById('confirmDeleteModal');
+        deleteModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+            var countryId = button.getAttribute('data-id');
+
+            var form = document.getElementById('deleteForm');
+            form.action = '/OriginCountries/Delete/' + countryId;
+        });
+    });
+</script>
