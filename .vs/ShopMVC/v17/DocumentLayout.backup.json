@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\dockerfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\dockerfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\cloudbuild.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\cloudbuild.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\lookupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\lookupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\views\\items\\landing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\views\\items\\landing.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\dbshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\dbshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\views\\items\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\views\\items\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\models\\itemlandingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\models\\itemlandingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\models\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\models\\itemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\views\\items\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\views\\items\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|c:\\labworks\\web-labs\\lab1\\src\\shopmvc\\shopinfrastructure\\controllers\\lookupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88B79D09-2732-48DC-B094-7BADC4A42585}|ShopInfrastructure\\ShopInfrastructure.csproj|solutionrelative:shopinfrastructure\\controllers\\lookupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,80 +63,150 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "ShopInfrastructure\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "ShopInfrastructure\\Models\\ErrorViewModel.cs",
+              "Title": "Dockerfile.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Dockerfile.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Dockerfile.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Dockerfile.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Dockerfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T11:59:18.004Z",
+              "WhenOpened": "2025-10-15T21:33:45.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StatisticsController.cs",
-              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\StatisticsController.cs",
-              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\StatisticsController.cs",
-              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\StatisticsController.cs",
-              "RelativeToolTip": "ShopInfrastructure\\Controllers\\StatisticsController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T11:59:04.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LookupController.cs",
-              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\LookupController.cs",
-              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\LookupController.cs",
-              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\LookupController.cs",
-              "RelativeToolTip": "ShopInfrastructure\\Controllers\\LookupController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T11:57:55.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ItemsController.cs",
-              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\ItemsController.cs",
-              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\ItemsController.cs",
-              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\ItemsController.cs",
-              "RelativeToolTip": "ShopInfrastructure\\Controllers\\ItemsController.cs",
-              "ViewState": "AgIAAFsBAAAAAAAAAAAUwFEBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T11:57:07.899Z",
+              "Title": "cloudbuild.yaml",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\cloudbuild.yaml",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\cloudbuild.yaml",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\cloudbuild.yaml",
+              "RelativeToolTip": "ShopInfrastructure\\cloudbuild.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-10-15T21:17:22.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ShopInfrastructure\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Title": "DbshopContext.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\DbshopContext.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\DbshopContext.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\DbshopContext.cs",
+              "RelativeToolTip": "ShopInfrastructure\\DbshopContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T11:57:05.284Z",
+              "WhenOpened": "2025-10-15T12:56:55.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Program.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Program.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Program.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T11:27:35.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "ShopInfrastructure\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T11:56:56.061Z",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Views\\Items\\Details.cshtml",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Views\\Items\\Details.cshtml",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Views\\Items\\Details.cshtml",
+              "RelativeToolTip": "ShopInfrastructure\\Views\\Items\\Details.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T13:43:47.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Views\\Items\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Views\\Items\\Index.cshtml",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Views\\Items\\Index.cshtml",
+              "RelativeToolTip": "ShopInfrastructure\\Views\\Items\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T13:41:25.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Landing.cshtml",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Views\\Items\\Landing.cshtml",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Views\\Items\\Landing.cshtml",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Views\\Items\\Landing.cshtml",
+              "RelativeToolTip": "ShopInfrastructure\\Views\\Items\\Landing.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T13:41:14.516Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ItemLandingVm.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Models\\ItemLandingVm.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Models\\ItemLandingVm.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Models\\ItemLandingVm.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Models\\ItemLandingVm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T13:40:16.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\ItemsController.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\ItemsController.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\ItemsController.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Controllers\\ItemsController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAgwDkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T13:38:49.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ShopInfrastructure\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAE8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-14T13:34:12.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LookupController.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\LookupController.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Controllers\\LookupController.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Controllers\\LookupController.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Controllers\\LookupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T06:29:38.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ItemViewModel.cs",
+              "DocumentMoniker": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Models\\ItemViewModel.cs",
+              "RelativeDocumentMoniker": "ShopInfrastructure\\Models\\ItemViewModel.cs",
+              "ToolTip": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\Models\\ItemViewModel.cs",
+              "RelativeToolTip": "ShopInfrastructure\\Models\\ItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T06:26:11.125Z"
             }
           ]
         }

@@ -54,6 +54,34 @@ namespace ShopInfrastructure.Controllers
             return View(item);
         }
 
+        // GET: Items/Landing/5  або /Items/5/landing (через атрибутний роут нижче)
+        [HttpGet("Items/{id:int}/landing")]
+        public async Task<IActionResult> Landing(int id)
+        {
+            var item = await _context.Items
+                .Include(i => i.Category)
+                .Include(i => i.Country)
+                .FirstOrDefaultAsync(i => i.Id == id);
+
+            if (item == null) return NotFound();
+
+            // Схожі товари з тієї ж категорії
+            var related = await _context.Items
+                .Where(x => x.CategoryId == item.CategoryId && x.Id != id)
+                .OrderByDescending(x => x.Id)
+                .Take(8)
+                .ToListAsync();
+
+            var vm = new ItemLandingVm
+            {
+                Item = item,
+                Related = related
+            };
+
+            return View("Landing", vm);
+        }
+
+
         // GET: Items/Create
         public IActionResult Create(int categoryId)
         {

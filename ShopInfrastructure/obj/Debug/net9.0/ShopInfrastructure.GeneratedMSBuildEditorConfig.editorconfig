@@ -76,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/LabWorks/WEB-labs/lab1/src/ShopMVC/ShopInfrastructure/Views/Items/Landing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbXNcTGFuZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/LabWorks/WEB-labs/lab1/src/ShopMVC/ShopInfrastructure/Views/OriginCountries/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JpZ2luQ291bnRyaWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

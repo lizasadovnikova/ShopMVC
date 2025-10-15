@@ -1,0 +1,259 @@
+﻿@model ShopInfrastructure.ViewModels.ItemLandingVm
+@{
+    ViewData["Title"] = $"{Model.Item.Name} — Landing";
+    var item = Model.Item;
+    var hasImg = !string.IsNullOrWhiteSpace(item.ImagePath);
+    var mainImg = hasImg ? item.ImagePath : "/img/placeholder.png";
+}
+
+@section Head {
+    <title>@item.Name – Магазин</title>
+    <meta name="description" content="Купити @item.Name. @(item.Description?.Length > 160 ? item.Description.Substring(0, 160) + "..." : item.Description)">
+    <meta name="keywords" content="@item.Name, купити @item.Name, товари, товари для дому, магазин, @item.Category?.Name">
+    <meta name="author" content="Shop">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook / Telegram / Viber) -->
+    <meta property="og:title" content="@item.Name – Магазин">
+    <meta property="og:description" content="@item.Description">
+    <meta property="og:image" content="@Url.Content(mainImg)">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="@Url.Action("Landing", "Items", new { id = item.Id }, Context.Request.Scheme)">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@item.Name – Магазин">
+    <meta name="twitter:description" content="@item.Description">
+    <meta name="twitter:image" content="@Url.Content(mainImg)">
+
+    <!-- Schema.org (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@@context": "https://schema.org/",
+            "@@type": "Product",
+            "name": "@item.Name",
+            "image": "@Url.Content(mainImg)",
+            "description": "@item.Description",
+            "brand": "Shop",
+            "category": "@item.Category?.Name",
+            "offers": {
+                "@@type": "Offer",
+                "priceCurrency": "UAH",
+                "price": "@item.Price",
+                "availability": "https://schema.org/InStock"
+            }
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-X27SRDME57');
+
+        gtag('event', 'landing_view', {
+          'page_title': '@Model.Item.Name',
+          'category': '@Model.Item.Category?.Name',
+          'price': '@Model.Item.Price'
+        });
+    </script>
+
+
+    <style>
+        .section {
+            scroll-margin-top: 80px;
+        }
+        @@media (max-width:991.98px) {
+            body
+
+        {
+            padding-bottom: 76px;
+        }
+
+        }
+    </style>
+}
+
+
+<div class="container-xxl">
+    <div class="row g-4">
+        <div class="col-12 col-lg-2 d-none d-lg-block">
+            <nav id="landingNav" class="list-group sticky-top" style="top: 80px;">
+                <a class="list-group-item list-group-item-action" href="#hero">Огляд</a>
+                <a class="list-group-item list-group-item-action" href="#gallery">Галерея</a>
+                <a class="list-group-item list-group-item-action" href="#specs">Характеристики</a>
+                <a class="list-group-item list-group-item-action" href="#buy">Купити</a>
+            </nav>
+        </div>
+
+        <div class="col-12 col-lg-8">
+            <!-- HERO -->
+            <section id="hero" class="section py-4 py-lg-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        @if (hasImg)
+                        {
+                            <img class="img-fluid rounded shadow-sm" src="@mainImg" alt="@item.Name">
+                        }
+                        else
+                        {
+                            <div class="ratio ratio-4x3 bg-light border rounded d-flex align-items-center justify-content-center">
+                                <span class="text-muted">Немає фото</span>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="display-6">@item.Name</h1>
+                        <p class="lead text-muted mb-3">@(string.IsNullOrWhiteSpace(item.Description) ? "Опис буде додано" : item.Description)</p>
+                        <div class="h3 mb-4">@item.Price.ToString("0.##") ₴</div>
+                        <a href="#buy" class="btn btn-success btn-lg">Купити</a>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-4" />
+
+            <!-- GALLERY -->
+            <section id="gallery" class="section py-4">
+                <h2 class="h4 mb-3">Галерея</h2>
+                @if (hasImg)
+                {
+                    <img class="img-fluid rounded shadow-sm" src="@mainImg" alt="@item.Name">
+                }
+                else
+                {
+                    <div class="ratio ratio-16x9 bg-light border rounded d-flex align-items-center justify-content-center">
+                        <span class="text-muted">Немає фото</span>
+                    </div>
+                }
+            </section>
+
+            <hr class="my-4" />
+
+            <!-- SPECS -->
+            <section id="specs" class="section py-4">
+                <h2 class="h4 mb-3">Характеристики</h2>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr><th>Категорія</th><td>@item.Category?.Name</td></tr>
+                        <tr><th>Країна</th><td>@item.Country?.Name</td></tr>
+                        <tr><th>Ціна</th><td>@item.Price.ToString("0.##") ₴</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr class="my-4" />
+
+            <!-- BUY (DEMO) -->
+            <section id="buy" class="section py-4">
+                <h2 class="h4 mb-3">Купити @item.Name</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col">
+                        <label class="form-label">Кількість</label>
+                        <input class="form-control" type="number" value="1" min="1" />
+                    </div>
+                    <div class="col d-grid align-items-end">
+                        <!-- МУЛЯЖ-->
+                        <button type="button" class="btn btn-success btn-lg mt-auto" data-demo="cart">
+                            Додати до кошика — @item.Price.ToString("0.##") ₴
+                        </button>
+                    </div>
+                </div>
+                <!-- <div class="form-text mt-2 text-muted">* Демо-версія: кошик ще не реалізовано.</div> -->
+            </section>
+
+            <hr class="my-4" />
+
+            <!-- RELATED -->
+            <section class="section py-4">
+                <h2 class="h5 mb-3">Схожі товари</h2>
+                <div class="row row-cols-2 row-cols-md-4 g-3">
+                    @foreach (var r in Model.Related)
+                    {
+                        var rHasImg = !string.IsNullOrWhiteSpace(r.ImagePath);
+                        <div class="col">
+                            <div class="card h-100 shadow-sm">
+                                @if (rHasImg)
+                                {
+                                    <img class="card-img-top" src="@r.ImagePath" alt="@r.Name" />
+                                }
+                                else
+                                {
+                                    <div class="ratio ratio-4x3 bg-light border rounded-top d-flex align-items-center justify-content-center">
+                                        <span class="text-muted small">Немає фото</span>
+                                    </div>
+                                }
+                                <div class="card-body">
+                                    <div class="fw-semibold small">@r.Name</div>
+                                    <div class="text-muted small">@r.Price.ToString("0.##") ₴</div>
+                                </div>
+                                <div class="card-footer bg-transparent d-grid gap-2">
+                                    <a class="btn btn-outline-primary btn-sm" asp-controller="Items" asp-action="Landing" asp-route-id="@r.Id">Детальніше</a>
+                                    <!-- МУЛЯЖ -->
+                                    <button type="button" class="btn btn-success btn-sm" data-demo="cart">В кошик</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </section>
+        </div>
+
+        <div class="col-12 col-lg-2">
+            <aside class="d-none d-lg-block">
+                <div class="card shadow-sm" style="position:sticky; top:80px; z-index:1030;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Контакти</h5>
+
+                        <div class="vstack gap-2">
+                            <a class="btn btn-outline-primary w-100">Подзвонити: +380 00 000 00 00</a>
+                            <a class="btn btn-outline-secondary w-100">Написати: shop@gmail.com</a>
+                            <div class="small text-muted">м. Київ, вул. Магазин, 1</div>
+                        </div>
+
+                        <hr />
+                        <a class="btn btn-success w-100" href="#buy">Купити зараз</a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="d-lg-none bg-light border-top" style="position:fixed; left:0; right:0; bottom:0; z-index:1030;">
+                <div class="container py-2">
+                    <div class="d-flex gap-2">
+                        <a class="btn btn-primary flex-fill">Подзвонити</a>
+                        <a class="btn btn-success flex-fill" href="#buy">Купити</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <!--
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:1080">
+        <div id="demoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Демо</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">Кошик ще не реалізовано.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('[data-demo="cart"]').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const el = document.getElementById('demoToast');
+                if (!el) return;
+                const toast = bootstrap.Toast.getOrCreateInstance(el, { delay: 2500 });
+                toast.show();
+            });
+        }); 
+    </script> -->
+}

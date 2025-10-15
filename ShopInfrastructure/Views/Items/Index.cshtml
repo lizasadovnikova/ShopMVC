@@ -67,11 +67,12 @@
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Редагувати</a> |
                     <a asp-action="Details" asp-route-id="@item.Id">Подробиці</a> |
+                    <a asp-action="Landing" asp-route-id="@item.Id" class="text-success fw-bold">Landing</a> |
                     <a href="#" class="delete-link" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="@item.Id">
                         Видалити
                     </a>
-
                 </td>
+
             </tr>
         }
     </tbody>

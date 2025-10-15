@@ -22,7 +22,7 @@ namespace ShopInfrastructure.ViewModels
         public string CountryName { get; set; } = null!;
 
         [Required(ErrorMessage = "Ціна є обов'язковою.")]
-        [Range(0.5, double.MaxValue, ErrorMessage = "Ціна має бути більше 0.")]
+        //[Range(0.5, double.MaxValue, ErrorMessage = "Ціна має бути більше 0.")]
         [DisplayFormat(DataFormatString = "{0:0.0}", ApplyFormatInEditMode = true)]
         [Display(Name = "Ціна")]
         public decimal Price { get; set; }

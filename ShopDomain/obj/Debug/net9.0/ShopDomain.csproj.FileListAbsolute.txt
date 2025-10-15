@@ -26,3 +26,4 @@ C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopDomain\obj\Debug\net9.0\refint\ShopDom
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopDomain\obj\Debug\net9.0\ShopDomain.pdb
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopDomain\obj\Debug\net9.0\ShopDomain.genruntimeconfig.cache
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopDomain\obj\Debug\net9.0\ref\ShopDomain.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopDomain\obj\Debug\net9.0\ShopDomain.sourcelink.json
