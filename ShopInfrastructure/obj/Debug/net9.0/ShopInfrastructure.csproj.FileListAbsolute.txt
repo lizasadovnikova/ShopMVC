@@ -695,3 +695,9 @@ C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Micros
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\System.Text.Json.dll
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\J2N.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene.Net.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene.Net.Analysis.Common.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene.Net.Queries.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene.Net.QueryParser.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene.Net.Sandbox.dll

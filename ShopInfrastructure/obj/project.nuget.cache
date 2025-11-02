@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D2ojCz9XaFc=",
+  "dgSpecHash": "MwzbjdcUNHA=",
   "success": true,
   "projectFilePath": "C:\\LabWorks\\WEB-labs\\lab1\\src\\ShopMVC\\ShopInfrastructure\\ShopInfrastructure.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,12 @@
     "C:\\Users\\lizas\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\lizas\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\lizas\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\lizas\\.nuget\\packages\\j2n\\2.0.0\\j2n.2.0.0.nupkg.sha512",
+    "C:\\Users\\lizas\\.nuget\\packages\\lucene.net\\4.8.0-beta00016\\lucene.net.4.8.0-beta00016.nupkg.sha512",
+    "C:\\Users\\lizas\\.nuget\\packages\\lucene.net.analysis.common\\4.8.0-beta00016\\lucene.net.analysis.common.4.8.0-beta00016.nupkg.sha512",
+    "C:\\Users\\lizas\\.nuget\\packages\\lucene.net.queries\\4.8.0-beta00016\\lucene.net.queries.4.8.0-beta00016.nupkg.sha512",
+    "C:\\Users\\lizas\\.nuget\\packages\\lucene.net.queryparser\\4.8.0-beta00016\\lucene.net.queryparser.4.8.0-beta00016.nupkg.sha512",
+    "C:\\Users\\lizas\\.nuget\\packages\\lucene.net.sandbox\\4.8.0-beta00016\\lucene.net.sandbox.4.8.0-beta00016.nupkg.sha512",
     "C:\\Users\\lizas\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.24\\microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512",
     "C:\\Users\\lizas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\lizas\\.nuget\\packages\\microsoft.build\\17.10.4\\microsoft.build.17.10.4.nupkg.sha512",

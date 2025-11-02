@@ -54,7 +54,7 @@ namespace ShopInfrastructure.Controllers
             return View(item);
         }
 
-        // GET: Items/Landing/5  або /Items/5/landing (через атрибутний роут нижче)
+        // GET: Items/Landing/5
         [HttpGet("Items/{id:int}/landing")]
         public async Task<IActionResult> Landing(int id)
         {
