@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ShopInfrastructure;
 using ShopDomain.Model;
 using ShopInfrastructure.Services;
+using Microsoft.Extensions.Caching.Memory;
 
 
 namespace ShopInfrastructure.Controllers.Api
@@ -14,11 +15,17 @@ namespace ShopInfrastructure.Controllers.Api
         private readonly DbshopContext _context;
 
         private readonly IItemSearchService _search;
+        private readonly IMemoryCache _cache;
 
-        public ItemsController(DbshopContext context, IItemSearchService search)
+        private static string _itemsCacheVersion = "v1";
+        private static string Version => _itemsCacheVersion;
+        private static void BumpVersion() => _itemsCacheVersion = Guid.NewGuid().ToString("N");
+
+        public ItemsController(DbshopContext context, IItemSearchService search, IMemoryCache cache)
         {
             _context = context;
             _search = search;
+            _cache = cache;
         }
 
 
@@ -48,7 +55,107 @@ namespace ShopInfrastructure.Controllers.Api
             public string? ImagePath { get; set; } 
         }
 
-        // api/items/reindex  (GET або POST) — разове переіндексування всіх товарів
+        public class ItemMapDto
+        {
+            public int Id { get; set; }
+            public string Name { get; set; } = null!;
+            public string? CategoryName { get; set; }
+            public string? CountryName { get; set; }
+            public decimal Price { get; set; }
+            public double Lat { get; set; }
+            public double Lng { get; set; }
+        }
+
+        private static readonly Dictionary<string, (double lat, double lng)> CountryCentroids =
+            new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["Україна"] = (49.0, 31.0),
+                ["США"] = (39.5, -98.35),
+                ["Польща"] = (52.1, 19.4),
+                ["Німеччина"] = (51.1, 10.4),
+            };
+
+        private static bool TryCountryCoords(string? countryName, out (double lat, double lng) p)
+        {
+            if (!string.IsNullOrWhiteSpace(countryName) && CountryCentroids.TryGetValue(countryName.Trim(), out p))
+                return true;
+            p = default;
+            return false;
+        }
+
+        // GET: api/items/map?q=&categoryId=&countryId=&limit=
+        [HttpGet("map")]
+        public async Task<IActionResult> MapData(
+            [FromQuery] string? q = null,
+            [FromQuery] int? categoryId = null,
+            [FromQuery] int? countryId = null,
+            [FromQuery] int limit = 1000)
+        {
+            if (limit <= 0) limit = 500;
+            if (limit > 2000) limit = 2000;
+
+            List<int> itemIds;
+            if (!string.IsNullOrWhiteSpace(q))
+            {
+                var (items, total) = await _search.SearchAsync(q!, 0, limit);
+                itemIds = items.Select(i => i.Id).ToList();
+            }
+            else
+            {
+                var queryEf = _context.Items.AsNoTracking();
+                if (categoryId.HasValue) queryEf = queryEf.Where(i => i.CategoryId == categoryId);
+                if (countryId.HasValue) queryEf = queryEf.Where(i => i.CountryId == countryId);
+                itemIds = await queryEf
+                    .OrderBy(i => i.Id)
+                    .Select(i => i.Id)
+                    .Take(limit)
+                    .ToListAsync();
+            }
+
+            if (itemIds.Count == 0)
+                return Ok(new { data = Array.Empty<ItemMapDto>() });
+
+            var data = await _context.Items
+                .Where(i => itemIds.Contains(i.Id))
+                .Include(i => i.Category)
+                .Include(i => i.Country)
+                .AsNoTracking()
+                .Select(i => new
+                {
+                    i.Id,
+                    i.Name,
+                    CategoryName = i.Category != null ? i.Category.Name : null,
+                    CountryName = i.Country != null ? i.Country.Name : null,
+                    i.Price,
+                })
+                .ToListAsync();
+
+            var points = new List<ItemMapDto>(data.Count);
+            foreach (var x in data)
+            {
+                (double lat, double lng) coords;
+
+                if (TryCountryCoords(x.CountryName, out var c)) coords = c;
+                else coords = (48.3794, 31.1656); // fallback: центр України
+
+                points.Add(new ItemMapDto
+                {
+                    Id = x.Id,
+                    Name = x.Name.Trim(),
+                    CategoryName = x.CategoryName?.Trim(),
+                    CountryName = x.CountryName?.Trim(),
+                    Price = x.Price,
+                    Lat = coords.lat,
+                    Lng = coords.lng
+                });
+            }
+
+            return Ok(new { data = points });
+        }
+
+
+
+        // api/items/reindex
         [HttpGet("reindex")]
         [HttpPost("reindex")]
         public async Task<IActionResult> Reindex()
@@ -66,22 +173,27 @@ namespace ShopInfrastructure.Controllers.Api
 
         // GET: api/items
         [HttpGet]
-        public async Task<ActionResult<object>> GetAll(
-    [FromQuery] int skip = 0,
-    [FromQuery] int limit = 10)
+        public async Task<ActionResult<object>> GetAll([FromQuery] int skip = 0, [FromQuery] int limit = 10)
         {
             if (limit <= 0) limit = 10;
             if (limit > 50) limit = 50;
 
-            var total = await _context.Items.CountAsync();
+            var cacheKey = $"items:{Version}:skip={skip}:limit={limit}";
 
+            if (_cache.TryGetValue(cacheKey, out object? cached) && cached is not null)
+            {
+                Response.Headers["X-Cache"] = "HIT";
+                Console.WriteLine($"[CACHE HIT] {cacheKey}");
+                return Ok(cached);
+            }
+
+            var total = await _context.Items.CountAsync();
             var items = await _context.Items
                 .Include(i => i.Category)
                 .Include(i => i.Country)
                 .AsNoTracking()
                 .OrderBy(i => i.Id)
-                .Skip(skip)
-                .Take(limit)
+                .Skip(skip).Take(limit)
                 .Select(i => new ItemApiDto
                 {
                     Id = i.Id,
@@ -89,9 +201,9 @@ namespace ShopInfrastructure.Controllers.Api
                     Description = i.Description,
                     Price = i.Price,
                     CategoryId = i.CategoryId,
-                    CategoryName = i.Category != null ? i.Category.Name : null,
+                    CategoryName = i.Category!.Name,
                     CountryId = i.CountryId,
-                    CountryName = i.Country != null ? i.Country.Name : null,
+                    CountryName = i.Country!.Name,
                     ImagePath = i.ImagePath
                 })
                 .ToListAsync();
@@ -99,58 +211,68 @@ namespace ShopInfrastructure.Controllers.Api
             string? nextLink = null;
             var nextSkip = skip + limit;
             if (nextSkip < total)
-            {
-                nextLink = Url.Action(
-                    action: nameof(GetAll),
-                    controller: "Items",
-                    values: new { skip = nextSkip, limit = limit },
-                    protocol: Request.Scheme
-                );
-            }
+                nextLink = Url.Action(nameof(GetAll), "Items", new { skip = nextSkip, limit }, Request.Scheme);
 
-            return Ok(new
+            var payload = new { data = items, total, skip, limit, nextLink };
+
+            Response.Headers["X-Cache"] = "MISS";
+            Console.WriteLine($"[CACHE MISS] {cacheKey}");
+            _cache.Set(cacheKey, payload, new MemoryCacheEntryOptions
             {
-                data = items,
-                total,
-                skip,
-                limit,
-                nextLink
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(30),
+                SlidingExpiration = TimeSpan.FromSeconds(15)
             });
+
+            return Ok(payload);
         }
 
+
+
+        // GET: api/items/search
         [HttpGet("search")]
         public async Task<IActionResult> Search(
-    [FromQuery] string q,
-    [FromQuery] int skip = 0,
-    [FromQuery] int limit = 10,
-    [FromQuery] string? category = null,
-    [FromQuery] string? country = null)
+            [FromQuery] string q,
+            [FromQuery] int skip = 0,
+            [FromQuery] int limit = 10,
+            [FromQuery] string? category = null,
+            [FromQuery] string? country = null)
         {
             if (limit <= 0) limit = 10;
             if (limit > 50) limit = 50;
+
+            var normQ = (q ?? "").Trim().ToLowerInvariant();
+            var normCat = (category ?? "").Trim().ToLowerInvariant();
+            var normCty = (country ?? "").Trim().ToLowerInvariant();
+
+            var cacheKey = $"items-search:{Version}:q={normQ}:cat={normCat}:cty={normCty}:s={skip}:l={limit}";
+
+            if (_cache.TryGetValue(cacheKey, out object? cached) && cached is not null)
+            {
+                Response.Headers["X-Cache"] = "HIT";
+                Console.WriteLine($"[CACHE HIT] {cacheKey}");
+                return Ok(cached);
+            }
 
             var (items, total) = await _search.SearchAsync(q, skip, limit, category, country);
 
             string? nextLink = null;
             var nextSkip = skip + limit;
             if (nextSkip < total)
-            {
                 nextLink = Url.Action(nameof(Search), "Items",
                     new { q, skip = nextSkip, limit, category, country }, Request.Scheme);
-            }
 
-            return Ok(new
+            var payload = new { data = items, total, skip, limit, nextLink };
+
+            Response.Headers["X-Cache"] = "MISS";
+            Console.WriteLine($"[CACHE MISS] {cacheKey}");
+            _cache.Set(cacheKey, payload, new MemoryCacheEntryOptions
             {
-                data = items,
-                total,
-                skip,
-                limit,
-                nextLink
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(30),
+                SlidingExpiration = TimeSpan.FromSeconds(15)
             });
+
+            return Ok(payload);
         }
-
-
-
 
 
         // GET: api/items/5
@@ -215,8 +337,7 @@ namespace ShopInfrastructure.Controllers.Api
             _context.Items.Add(item);
             await _context.SaveChangesAsync();
             await _search.IndexItemAsync(item);
-
-
+            BumpVersion(); 
             return Ok(new { status = "Ok", id = item.Id });
         }
 
@@ -250,6 +371,7 @@ namespace ShopInfrastructure.Controllers.Api
 
             await _context.SaveChangesAsync();
             await _search.IndexItemAsync(item);
+            BumpVersion();
 
 
             return Ok(new { status = "Ok" });
@@ -267,6 +389,7 @@ namespace ShopInfrastructure.Controllers.Api
             _context.Items.Remove(item);
             await _context.SaveChangesAsync();
             await _search.DeleteItemAsync(id);
+            BumpVersion();
 
 
             return Ok(new { status = "Ok" });

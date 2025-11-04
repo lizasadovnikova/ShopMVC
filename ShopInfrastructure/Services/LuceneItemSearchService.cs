@@ -7,7 +7,7 @@ using Lucene.Net.Store;
 using Lucene.Net.Util;
 using Microsoft.EntityFrameworkCore;
 using ShopDomain.Model;
-using ShopInfrastructure; // <-- щоб був DbshopContext
+using ShopInfrastructure;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -59,7 +59,6 @@ namespace ShopInfrastructure.Services
 
         public async Task IndexItemAsync(Item item)
         {
-            // дістанемо назви одразу
             var categoryName = await _db.Categories
                 .Where(c => c.Id == item.CategoryId)
                 .Select(c => c.Name)
@@ -115,7 +114,6 @@ namespace ShopInfrastructure.Services
 
             var searcher = new IndexSearcher(reader);
 
-            // шукаємо одразу по 4 полях
             var fields = new[] { "name", "description", "categoryName", "countryName" };
             var parser = new MultiFieldQueryParser(AppLuceneVersion, fields, _analyzer);
 
@@ -132,7 +130,6 @@ namespace ShopInfrastructure.Services
                 luceneQuery = parser.Parse("*:*");
             }
 
-            // шукаємо побільше, а потім фільтруємо
             var topDocs = searcher.Search(luceneQuery, skip + limit + 100);
 
             var docs = topDocs.ScoreDocs
@@ -157,7 +154,6 @@ namespace ShopInfrastructure.Services
                     };
                 });
 
-            // додаткове фільтрування вже в C#
             if (!string.IsNullOrWhiteSpace(category))
                 docs = docs.Where(x => x.CategoryName != null &&
                                        x.CategoryName.Contains(category, StringComparison.OrdinalIgnoreCase));

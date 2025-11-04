@@ -701,3 +701,6 @@ C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene.Net.Queries.dll
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene.Net.QueryParser.dll
 C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Lucene.Net.Sandbox.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\Pipelines.Sockets.Unofficial.dll
+C:\LabWorks\WEB-labs\lab1\src\ShopMVC\ShopInfrastructure\bin\Debug\net9.0\StackExchange.Redis.dll
